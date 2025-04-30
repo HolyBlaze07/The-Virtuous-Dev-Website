@@ -7,7 +7,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: rgb(22, 22, 22);
+  color: #7272fa;
+  font-size: 20px;
 
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -31,17 +32,20 @@ header h1 {
   animation: float 4s ease-in-out infinite;
 
   color: white;
-  -webkit-text-stroke: 2px #5f77ff; /* Light blue outline */
+  -webkit-text-stroke: 2px #5f77ff;
+  /* Light blue outline */
 
   text-shadow: 0 0 10px rgba(95, 119, 255, 0.5),
     0 0 20px rgba(95, 119, 255, 0.3);
 }
+
 /* * Pronunciation animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -61,7 +65,7 @@ header p {
   margin-top: 1rem;
   font-size: 1.5rem;
   color: #b0b0f7;
-  max-width: 500px;
+
 }
 
 .btn {
@@ -87,19 +91,21 @@ section {
   text-align: center;
   position: relative;
 }
-/* .about-section h2 {
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 2rem;
-  color: #000000;
- 
 
-  animation: fadeIn 2s ease-in-out forwards;
-} */
+.visually-hidden {
+  position: absolute;
+ position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 .about-section p {
   display: flex;
   justify-content: flex-start;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #b0b0f7;
   font-family: "Poppins", sans-serif;
   align-items: center;
@@ -108,14 +114,17 @@ section {
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   gap: 2rem;
   margin-top: 5rem;
 
-  justify-content: center;
+
+ 
 }
+
 .skill {
   padding: 1rem 1.5rem;
   border: 2px solid #c8cbdb;
@@ -134,9 +143,10 @@ section {
   box-shadow: 0 0 15px rgba(95, 119, 255, 0.8), 0 0 25px rgba(255, 160, 28, 0.6),
     0 0 35px rgba(95, 119, 255, 0.5);
 }
+
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px); /* Force fixed width */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 5rem;
@@ -159,7 +169,7 @@ section {
 .projects h3 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
-  color: #b0b0f7;
+  color: #8888f3;
 }
 
 .projects p {
@@ -181,9 +191,11 @@ footer {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -205,6 +217,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Slight dark overlay */
+  background: rgba(255, 255, 255, 0.5);
+  /* Slight dark overlay */
   z-index: -1;
 }
