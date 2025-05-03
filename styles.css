@@ -101,6 +101,16 @@ section {
   overflow: hidden;
 }
 
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+
 .about-section p {
   font-size: 1.5rem;
   color: #b0b0f7;
@@ -108,7 +118,16 @@ section {
   text-align: left;
   margin: 0 auto;
   animation: fadeIn 2s ease-in-out forwards;
-  max-width: 800px;
+  max-width: 600px;
+}
+
+.about-animation {
+  animation: bounce 10s ease-in-out infinite;
+}
+.about-animation video {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
 }
 
 .skills {
@@ -197,7 +216,7 @@ footer {
   }
 }
 
-#background-video {
+#main-background-video {
   position: fixed;
   top: 0;
   left: 0;

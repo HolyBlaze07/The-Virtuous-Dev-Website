@@ -12,8 +12,10 @@
       rel="stylesheet"
     />
   </head>
+  </head>
   <body>
-    <video autoplay muted loop playsinline id="background-video">
+    
+    <video autoplay muted loop playsinline id="main-background-video">
       <source
         src="assets/img/Animation - 1745863171000.webm"
         type="video/webm"
@@ -32,24 +34,26 @@
     </header>
 
     <section id="about" class="about-section">
-      <h2 class="visually-hidden">About Me</h2>
-      <p>
-        Hey hey! I'm a ray of sunshine, your go-to Front-End Developer for
-        vibrant, engaging and high performing websites. I specialize in crafting
-        unique digital experiences that not only look great but also function
-        seamlessly. With a passion for design and a knack for coding, I bring
-        your visions to life with a touch of creativity and a dash of flair.
-        Let's collaborate and turn your ideas into reality!
-      </p>
-
-      <div class="animation">
-        <img
-          src="assets/img/Animation - 1746150956755.webm"
-          alt="Animated illustration"
-          class="animated-image"
-        />
+      <div class="about-text">
+        <h2 class="visually-hidden">About Me</h2>
+        <p>
+          Hey hey! I'm a ray of sunshine, your go-to Front-End Developer for
+          vibrant, engaging and high performing websites. I specialize in
+          crafting unique digital experiences that not only look great but also
+          function seamlessly. With a passion for design and a knack for coding,
+          I bring your visions to life with a touch of creativity and a dash of
+          flair. Let's collaborate and turn your ideas into reality!
+        </p>
       </div>
-      "
+      <div class="about-animation">
+        <video autoplay muted loop playsinline id="about-background-video">
+          <source
+            src="assets/img/Animation - 1746150956755 (1).webm"
+            type="video/webm"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
 
     <section id="skills">
@@ -139,6 +143,8 @@
     <script
       src="https://kit.fontawesome.com/ee0cf74caf.js"
       crossorigin="anonymous"
+      
     ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
