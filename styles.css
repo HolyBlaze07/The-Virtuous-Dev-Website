@@ -188,6 +188,10 @@ justify-content: space-evenly;
   gap: 10px;
   margin-top: 5rem;
 
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+
  
 }
 
