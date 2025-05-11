@@ -121,7 +121,7 @@ section {
   margin: 0 auto;
   animation: fadeIn 2s ease-in-out forwards;
   max-width: 800px;
-}
+} */
 
 .skills {
   display: flex;
@@ -248,7 +248,7 @@ footer {
   }
 }
 
-#main-background-video {
+#background-video {
   position: fixed;
   top: 0;
   left: 0;
