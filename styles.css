@@ -1,6 +1,6 @@
 /* --- RESET --- */
 * {
-  margin: 0;
+  
   padding: 0;
   box-sizing: border-box;
 }
@@ -68,7 +68,7 @@ header p {
 }
 
 .btn {
-  margin-top: 2rem;
+  
   padding: 0.75rem 2rem;
   background-color: #5f77ff;
   color: white;
@@ -79,6 +79,8 @@ header p {
   transition: background-color 0.3s ease;
   text-decoration: none;
   display: inline-block;
+ 
+   
 }
 
 .btn:hover {
@@ -91,7 +93,7 @@ section {
   position: relative;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   position: absolute;
   left: -9999px;
@@ -109,7 +111,7 @@ section {
   margin: 0 auto;
   animation: fadeIn 2s ease-in-out forwards;
   max-width: 800px;
-}
+} */
 
 .skills {
   display: flex;
@@ -142,37 +144,76 @@ section {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+flex-wrap: wrap;
+justify-content: space-evenly;
+  gap: 10px;
   margin-top: 5rem;
 }
 
 .project-card {
-  background: rgba(122, 64, 64, 0.05);
+  background: rgba(255, 0, 0, 0.05);
   border: 1px solid rgba(159, 158, 228, 0.1);
   border-radius: 15px;
   padding: 2rem;
   max-width: 300px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease, background 0.3s ease;
+  
+
 }
 
-.project-card:hover {
-  transform: translateY(-10px) scale(1.05);
+.project-card .btn {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.project-card:hover{
+  transform: translateY(-10px);
   background: rgba(255, 255, 255, 0.1);
-}
 
+}
 .projects h3 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 1.25rem;
   color: #8888f3;
+  text-align: center;
+  font-weight: 600;
 }
 
 .projects p {
   font-size: 0.9rem;
   color: #b0b0f7;
-  margin-top: 0.5rem;
+ font-size: 0.9rem;
+ 
+  line-height: 1.4;
+  
 }
+
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+card-content p {
+ 
+    flex-grow: 1;
+  text-align: center;
+  margin: 1rem ;
+  
+}
+
+
 
 footer {
   padding: 2rem;
@@ -216,4 +257,68 @@ footer {
   background: rgba(255, 255, 255, 0.5);
   /* Slight dark overlay */
   z-index: -1;
+}
+
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .skills {
+    gap: 1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .project-card {
+    max-width: 90%;
+    min-height: auto;
+  }
+
+  .card-content {
+    min-height: auto;
+    padding-top: 0;
+  }
+
+  .projects h3 {
+    font-size: 1.1rem;
+  }
+
+  .projects p {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.8rem;
+  }
 }
