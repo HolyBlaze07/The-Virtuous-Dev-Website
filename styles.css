@@ -195,6 +195,29 @@ justify-content: space-evenly;
  
 }
 
+  
+ .project-image {
+  width: 100%;
+  height: 180px; /* Set a fixed height */
+  object-fit: contain; /* Crop to fill box while maintaining aspect ratio */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 1rem auto; /* Center and space below */
+}
+
+.image-wrapper {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+    
+
+
+
 .project-card {
   background: rgba(255, 0, 0, 0.05);
   border: 1px solid rgba(159, 158, 228, 0.1);
@@ -205,7 +228,8 @@ justify-content: space-evenly;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease, background 0.3s ease;
+  align-items: center;
+  transition: transform 0.3s ease;
   
   
 
@@ -261,6 +285,54 @@ card-content p {
   
 }
 
+.slider-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.slider-container {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 
 
 footer {
