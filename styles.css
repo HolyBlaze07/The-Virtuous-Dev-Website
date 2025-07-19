@@ -483,24 +483,53 @@ footer {
   border: none;
 }
 
-/* ===== Gallery Image Slides ===== */
+
+/* === Gallery Slides === */
 .gallery-slides {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
 .gallery-slides img {
   width: 100%;
+  max-height: 80vh;
   border-radius: 12px;
-  transition: transform 0.3s ease;
+  object-fit: contain;
   box-shadow: 0 0 15px rgba(95, 119, 255, 0.3);
 }
 
-.gallery-slides img:hover {
-  transform: scale(1.02);
+/* === Buttons on top of image === */
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(95, 119, 255, 0.85);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
 }
+
+.gallery-btn.prev {
+  left: 20px;
+  background-color:  rgba(95, 119, 255, 0.85);
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.gallery-btn.next {
+  right: 20px;
+  background-color:  rgba(95, 119, 255, 0.85);
+  font-size: 15px;
+  border-radius: 20px;
+}
+
 
 /* ===== Template Description Section ===== */
 .template-description {
